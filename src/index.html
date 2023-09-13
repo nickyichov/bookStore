@@ -1,0 +1,620 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-slate-100 pb-8">
+    <header class="flex gap-3 py-4 text-gray-500 bg-white justify-around">
+        <div class="flex justify-center">
+            <h1 class="border-r-2 border-gray-400 px-2 h-8">Browse Category</h1>
+            <div class="px-2 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                  </svg>                  
+            </div>
+            <div>
+                <input type="text" placeholder="Search Book" class="focus:outline-none">
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <p class="text-gray-500 text-xl">read<span class="text-black font-semibold">books</span></p>
+        </div>
+        <div class="flex place-self-center">
+            <div class="relative">
+            <img src="/img/person.jpg" class="w-12 h-12 rounded-full">
+                <div class="">
+                    <div class="w-4 h-4 bg-pink-400 rounded-full border-[3px] border-white absolute top-0 right-0"></div>
+                </div>
+            </div>
+            <div class="border-r-2 border-gray-400 px-2 h-8 mt-2"></div>
+            <div class="mt-3 px-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>                  
+            </div>
+            <div class="mt-2 text-lg">
+                <p>Menu</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="flex justify-center">
+        <div class="carousel relative">
+            <div class="carousel-inner relative">
+              <!--Slide 1-->
+              <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+              <div class="carousel-item absolute opacity-0">
+                <div class="bg-violet-300 grid grid-cols-3 py-10 w-[820px] relative">
+                    <div class="col-span-1 drop-shadow-lg">
+                        <img src="/img/after.jpg" class="w-56 hover:w-[230px] transformation ease-out duration-300 absolute left-6">
+                    </div>
+                    <div class="col-span-2 place-self-start text-white">
+                        <div>
+                            <h1 class="font-bold text-xl">After You</h1>
+                            <span class="text-md">by Jojo Moyes</span>
+                        </div>
+                        <div class="flex">
+                            <div class="hover:text-purple-700">
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p class="ml-4">1.987 voters</p>
+                        </div>
+                        <div class="w-[450px] mt-5 font-semibold">
+                            <p>Louisa Clark is no longer just an ordinary girl living an ordinary life. After the transformative six months spent.</p>
+                        </div>
+                        <div class="mt-10">
+                            <button class="bg-white text-purple-300 hover:text-purple-500 font-bold px-6 py-2 rounded-full">See The Book</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl bg-white text-gray-500 font-bold opacity-60 hover:opacity-100 rounded-full leading-tight text-center z-10 inset-y-0 -left-24 my-auto">‹</label>
+              <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl bg-white text-gray-500 font-bold opacity-60 hover:opacity-100 rounded-full leading-tight text-center z-10 inset-y-0 -right-24 my-auto">›</label>
+        
+              <!--Slide 2-->
+              <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+              <div class="carousel-item absolute opacity-0">
+                <div class="bg-blue-300 grid grid-cols-3 py-10 w-[820px] relative" id="book-1">
+                    <div class="col-span-1 drop-shadow-2xl">
+                        <img src="/img/10.jpg" class="w-56 hover:w-[230px] transformation ease-out duration-300 absolute left-6">
+                    </div>
+                    <div class="col-span-2 place-self-start text-white">
+                        <div>
+                            <h1 class="font-bold text-xl">10 Minutes 38 Seconds</h1>
+                            <span class="text-md">by Elif Shafak</span>
+                        </div>
+                        <div class="flex">
+                            <div class="hover:text-blue-700">
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p class="ml-4">1.987 voters</p>
+                        </div>
+                        <div class="w-[450px] mt-5 font-semibold">
+                            <p>Louisa Clark is no longer just an ordinary girl living an ordinary life. After the transformative six months spent.</p>
+                        </div>
+                        <div class="mt-10">
+                            <button class="bg-white text-blue-300 hover:text-blue-500 font-bold px-6 py-2 rounded-full">See The Book</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl bg-white text-gray-500 font-bold opacity-60 hover:opacity-100 rounded-full leading-tight text-center z-10 inset-y-0 -left-24 my-auto">‹</label>
+              <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl bg-white text-gray-500 font-bold opacity-60 hover:opacity-100 rounded-full leading-tight text-center z-10 inset-y-0 -right-24 my-auto">›</label>
+        
+              <!--Slide 3-->
+              <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+              <div class="carousel-item absolute opacity-0">
+                <div class="bg-orange-300 grid grid-cols-3 py-10 w-[820px] relative" id="book-1">
+                    <div class="col-span-1 drop-shadow-2xl">
+                        <img src="/img/dominicana.jpg" class="w-56 hover:w-[230px] transformation ease-out duration-300 absolute left-6">
+                    </div>
+                    <div class="col-span-2 place-self-start text-white">
+                        <div>
+                            <h1 class="font-bold text-xl">Dominicana</h1>
+                            <span class="text-md">by Angie Cruz</span>
+                        </div>
+                        <div class="flex">
+                            <div class="hover:text-orange-700">
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p class="ml-4">1.987 voters</p>
+                        </div>
+                        <div class="w-[450px] mt-5 font-semibold">
+                            <p>Louisa Clark is no longer just an ordinary girl living an ordinary life. After the transformative six months spent.</p>
+                        </div>
+                        <div class="mt-10">
+                            <button class="bg-white text-orange-300 hover:text-orange-500 font-bold px-6 py-2 rounded-full">See The Book</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl bg-white text-gray-500 font-bold opacity-60 hover:opacity-100 rounded-full leading-tight text-center z-10 inset-y-0 -left-24 my-auto">‹</label>
+              <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl bg-white text-gray-500 font-bold opacity-60 hover:opacity-100 rounded-full leading-tight text-center z-10 inset-y-0 -right-24 my-auto">›</label>
+            </div>
+          </div>
+    </section>
+
+    
+    
+
+    <section class="mt-28 bg-slate-100">
+        <div class="grid grid-cols-4">
+            <div class="col-span-1 ml-4">
+                <div>
+                    <h1 class="font-bold">Author of the week</h1>
+                    <div class="flex content-center mt-4 ml-2">
+                        <img src="/img/seb.jpg" class="w-10 h-10 rounded-full">
+                        <span class="ml-4 mt-2">Sebastian Jeremy</span>
+                    </div>
+                    <div class="flex content-center mt-4 ml-2">
+                        <img src="/img/doe.jpg" class="w-10 h-10 rounded-full">
+                        <span class="ml-4 mt-2">Jonathan Doe</span>
+                    </div>
+                    <div class="flex content-center mt-4 ml-2">
+                        <img src="/img/summer.jpg" class="w-10 h-10 rounded-full">
+                        <span class="ml-4 mt-2">Angeline Summer</span>
+                    </div>
+                    <div class="flex content-center mt-4 ml-2">
+                        <img src="/img/noah.jpg" class="w-10 h-10 rounded-full">
+                        <span class="ml-4 mt-2">Noah Jones</span>
+                    </div>
+                    <div class="flex content-center mt-4 ml-2">
+                        <img src="/img/tom.jpg" class="w-10 h-10 rounded-full">
+                        <span class="ml-4 mt-2">Tommy Adam</span>
+                    </div>
+                    <div class="flex content-center mt-4 ml-2">
+                        <img src="/img/ian.jpg" class="w-10 h-10 rounded-full">
+                        <span class="ml-4 mt-2">Ian Cassandra</span>
+                    </div>
+                    
+                    <h1 class="font-bold mt-8 mb-2">Books of the year</h1>
+                    <div class="flex">
+                        <div class="p-2">
+                            <img src="/img/earth.jpg" class="w-14">
+                        </div>
+                        <div class="mt-6 pl-2">
+                            <h1 class="font-semibold mb-2">Disappearing Earth</h1>
+                            <span>by Julia Philips</span>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="p-2">
+                            <img src="/img/lost.jpg" class="w-14">
+                        </div>
+                        <div class="mt-6 pl-2">
+                            <h1 class="font-semibold mb-2">Lost Children Archive</h1>
+                            <span>by Valeria Luiselli</span>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="p-2">
+                            <img src="/img/phantom.jpg" class="w-14">
+                        </div>
+                        <div class="mt-6 pl-2">
+                            <h1 class="font-semibold mb-2">Phantoms: A Thriller</h1>
+                            <span>by Dean Koontz</span>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="p-2">
+                            <img src="/img/midnight.jpg" class="w-14">
+                        </div>
+                        <div class="mt-6 pl-2">
+                            <h1 class="font-semibold mb-2">Midnight in Chernobyl</h1>
+                            <span>by Adam Higginbotham</span>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="p-2">
+                            <img src="/img/10.jpg" class="w-14">
+                        </div>
+                        <div class="mt-6 pl-2">
+                            <h1 class="font-semibold mb-2">10 Minutes 38 Seconds</h1>
+                            <span>by Elif Shafak</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-3">
+                <div class="flex justify-between border-b-2 mr-12">
+                    <h1 class="font-bold mb-4">Popular by Genre</h1>
+                    <nav class="flex gap-4 text-gray-400">
+                        <a href="#" class="group hover:text-gray-900 relative">All genres
+                            <div class="group-hover:border-b-2 border-blue-500 w-8 absolute bottom-0 left-5"></div>
+                        </a>
+                        <a href="#" class="group hover:text-gray-900 relative">Businsess
+                            <div class="group-hover:border-b-2 border-blue-500 w-8 absolute bottom-0 left-5"></div>
+                        </a>
+                        <a href="#" class="group hover:text-gray-900 relative">Science
+                            <div class="group-hover:border-b-2 border-blue-500 w-8 absolute bottom-0 left-2"></div>
+                        </a>
+                        <a href="#" class="group hover:text-gray-900 relative">Fiction
+                            <div class="group-hover:border-b-2 border-blue-500 w-8 absolute bottom-0 left-2"></div>
+                        </a>
+                        <a href="#" class="group hover:text-gray-900 relative">Philosophy
+                            <div class="group-hover:border-b-2 border-blue-500 w-8 absolute bottom-0 left-5"></div>
+                        </a>
+                        <a href="#" class="group hover:text-gray-900 relative">Biography
+                            <div class="group-hover:border-b-2 border-blue-500 w-8 absolute bottom-0 left-5"></div>
+                        </a>
+                    </nav>
+                </div>
+                <div class="grid lg:grid-cols-2 md:grid-cols-1 mt-24 rounded-lg">
+                    <div>
+                        <div class="">
+                            <div class="bg-white grid grid-cols-3 text-gray-400 w-[550px] rounded-t-lg relative">
+                                <div class="col-span-1">
+                                    <img src="/img/chances.jpg" class="w-44 absolute bottom-4 left-6 hover:w-[185px] transformation ease-out duration-300 drop-shadow-xl">
+                                </div>
+                                <div class="py-6 pr-6 col-span-2 ml-10">
+                                    <h1 class="text-black text-lg font-semibold">Changes are</h1>
+                                    <span>by Richard Russo</span>
+                                    <div class="flex py-2">
+                                        <div class="hover:text-yellow-500">
+                                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                            <span class="fa fa-star checked "></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="ml-4">1.987 voters</p>
+                                    </div>
+                                    <div class="pb-4">
+                                        <p class="leading-5">Readers of all ages and walks of life have drawn inspiration and empowerment from Elizabeth Gilbert’s books for years.</p>
+                                    </div>
+                                </div>
+                                <div class="absolute top-2 right-0">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400 hover:text-gray-700">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                        </svg>    
+                                    </a>                              
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white w-[550px] border-t-2 rounded-b-lg">
+                            <div class="flex px-4 py-2">
+                                <img src="/img/seb.jpg" class="w-7 h-7 rounded-full -mr-2 hover:-mr-0">
+                                <img src="/img/doe.jpg" class="w-7 h-7 rounded-full -mr-2 hover:-mr-0">
+                                <img src="/img/summer.jpg" class="w-7 h-7 rounded-full -mr-2">
+                                <div class="ml-4">
+                                    <p class="text-sm text-gray-400"><span class="font-semibold">Samantha William</span> and 2 <span class="font-semibold">other friends</span> like this</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:mt-0 sm:mt-24">
+                        <div class="">
+                            <div class="bg-white grid grid-cols-3 text-gray-400 w-[550px] rounded-t-lg relative">
+                                <div class="col-span-1">
+                                    <img src="/img/dominicana.jpg" class="w-44 absolute bottom-4 left-6 hover:w-[185px] transformation ease-out duration-300 drop-shadow-xl">
+                                </div>
+                                <div class="py-6 pr-6 col-span-2 ml-10">
+                                    <h1 class="text-black text-lg font-semibold">Dominicana</h1>
+                                    <span>by Angie Cruz</span>
+                                    <div class="flex py-2">
+                                        <div class="hover:text-yellow-500">
+                                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                            <span class="fa fa-star checked "></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="ml-4">1.987 voters</p>
+                                    </div>
+                                    <div class="pb-4">
+                                        <p class="leading-5">Readers of all ages and walks of life have drawn inspiration and empowerment from Elizabeth Gilbert’s books for years.</p>
+                                    </div>
+                                </div>
+                                <div class="absolute top-2 right-0">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400 hover:text-gray-700">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                        </svg>    
+                                    </a>                              
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white w-[550px] border-t-2 rounded-b-lg">
+                            <div class="flex px-4 py-2">
+                                <img src="/img/seb.jpg" class="w-7 h-7 rounded-full">
+                                <div class="ml-4">
+                                    <p class="text-sm text-gray-400"><span class="font-semibold">Kimberly Jones</span> like this</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-24">
+                        <div class="">
+                            <div class="bg-white grid grid-cols-3 text-gray-400 w-[550px] rounded-t-lg relative">
+                                <div class="col-span-1">
+                                    <img src="/img/travellers.jpg" class="w-44 absolute bottom-4 left-6 hover:w-[185px] transformation ease-out duration-300 drop-shadow-xl">
+                                </div>
+                                <div class="py-6 pr-6 col-span-2 ml-10">
+                                    <h1 class="text-black text-lg font-semibold">The Travellers</h1>
+                                    <span>by Regina Porter</span>
+                                    <div class="flex py-2">
+                                        <div class="hover:text-yellow-500">
+                                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                            <span class="fa fa-star checked "></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="ml-4">1.987 voters</p>
+                                    </div>
+                                    <div class="pb-4">
+                                        <p class="leading-5">Readers of all ages and walks of life have drawn inspiration and empowerment from Elizabeth Gilbert’s books for years.</p>
+                                    </div>
+                                </div>
+                                <div class="absolute top-2 right-0">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400 hover:text-gray-700">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                        </svg>    
+                                    </a>                              
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white w-[550px] border-t-2 rounded-b-lg">
+                            <div class="flex px-4 py-2">
+                                <img src="/img/seb.jpg" class="w-7 h-7 rounded-full">
+                                <img src="/img/doe.jpg" class="w-7 h-7 rounded-full">
+                                <div class="ml-4">
+                                    <p class="text-sm text-gray-400"><span class="font-semibold">Adam</span> and <span class="font-semibold">Kimberly</span> like this</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-24">
+                        <div class="relative">
+                            <div class="bg-white grid grid-cols-3 text-gray-400 w-[550px] rounded-t-lg">
+                                <div class="col-span-1">
+                                    <img src="/img/faun.jpg" class="w-44 absolute bottom-4 left-6 hover:w-[185px] transformation ease-out duration-300 drop-shadow-xl">
+                                </div>
+                                <div class="py-6 pr-6 col-span-2 ml-10">
+                                    <h1 class="text-black text-lg font-semibold">Afternoon Of A Faun</h1>
+                                    <span>by James Lasdun</span>
+                                    <div class="flex py-2">
+                                        <div class="hover:text-yellow-500">
+                                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                            <span class="fa fa-star checked "></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="ml-4">1.987 voters</p>
+                                    </div>
+                                    <div class="pb-4">
+                                        <p class="leading-5">Readers of all ages and walks of life have drawn inspiration and empowerment from Elizabeth Gilbert’s books for years.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute top-2 right-6">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400 hover:text-gray-700">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                    </svg>    
+                                </a>                                  
+                            </div>
+                        </div>
+                        <div class="bg-white w-[550px] border-t-2 rounded-b-lg">
+                            <div class="flex px-4 py-2">
+                                <img src="/img/seb.jpg" class="w-7 h-7 rounded-full">
+                                <img src="/img/doe.jpg" class="w-7 h-7 rounded-full">
+                                <img src="/img/summer.jpg" class="w-7 h-7 rounded-full">
+                                <div class="ml-4">
+                                    <p class="text-sm text-gray-400"><span class="font-semibold">Samantha William</span> and 2 <span class="font-semibold">other friends</span> like this</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-24">
+                        <div class="relative">
+                            <div class="bg-white grid grid-cols-3 text-gray-400 w-[550px] rounded-t-lg">
+                                <div class="col-span-1">
+                                    <img src="/img/diary.jpg" class="w-44 absolute bottom-4 left-6 hover:w-[185px] transformation ease-out duration-300 drop-shadow-xl">
+                                </div>
+                                <div class="py-6 pr-6 col-span-2 ml-10">
+                                    <h1 class="text-black text-lg font-semibold">Flash Count Diary</h1>
+                                    <span>by Darcey Steinke</span>
+                                    <div class="flex py-2">
+                                        <div class="hover:text-yellow-500">
+                                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                            <span class="fa fa-star checked "></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="ml-4">1.987 voters</p>
+                                    </div>
+                                    <div class="pb-4">
+                                        <p class="leading-5">Readers of all ages and walks of life have drawn inspiration and empowerment from Elizabeth Gilbert’s books for years.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute top-2 right-6">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400 hover:text-gray-700">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                    </svg>    
+                                </a>                                  
+                            </div>
+                        </div>
+                        <div class="bg-white w-[550px] border-t-2 rounded-b-lg">
+                            <div class="flex px-4 py-2">
+                                <img src="/img/seb.jpg" class="w-7 h-7 rounded-full">
+                                <img src="/img/doe.jpg" class="w-7 h-7 rounded-full">
+                                <img src="/img/summer.jpg" class="w-7 h-7 rounded-full">
+                                <div class="ml-4">
+                                    <p class="text-sm text-gray-400"><span class="font-semibold">Samantha William</span> and 2 <span class="font-semibold">other friends</span> like this</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-24">
+                        <div class="relative">
+                            <div class="bg-white grid grid-cols-3 text-gray-400 w-[550px] rounded-t-lg">
+                                <div class="col-span-1">
+                                    <img src="/img/picnic.jpg" class="w-44 absolute bottom-4 left-6 hover:w-[185px] transformation ease-out duration-300 drop-shadow-xl">
+                                </div>
+                                <div class="py-6 pr-6 col-span-2 ml-10">
+                                    <h1 class="text-black text-lg font-semibold">Picnic Comma Lightning</h1>
+                                    <span>by Lucy Parker</span>
+                                    <div class="flex py-2">
+                                        <div class="hover:text-yellow-500">
+                                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                            <span class="fa fa-star checked "></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="ml-4">1.987 voters</p>
+                                    </div>
+                                    <div class="pb-4">
+                                        <p class="leading-5">Readers of all ages and walks of life have drawn inspiration and empowerment from Elizabeth Gilbert’s books for years.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute top-2 right-6">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400 hover:text-gray-700">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                    </svg>    
+                                </a>                                  
+                            </div>
+                        </div>
+                        <div class="bg-white w-[550px] border-t-2 rounded-b-lg">
+                            <div class="flex px-4 py-2">
+                                <img src="/img/seb.jpg" class="w-7 h-7 rounded-full">
+                                <img src="/img/doe.jpg" class="w-7 h-7 rounded-full">
+                                <div class="ml-4">
+                                    <p class="text-sm text-gray-400"><span class="font-semibold">George</span> and <span class="font-semibold">Mike</span> like this</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-24">
+                        <div class="relative">
+                            <div class="bg-white grid grid-cols-3 text-gray-400 w-[550px] rounded-t-lg">
+                                <div class="col-span-1">
+                                    <img src="/img/nice.jpg" class="w-44 absolute bottom-4 left-6 hover:w-[185px] transformation ease-out duration-300 drop-shadow-xl">
+                                </div>
+                                <div class="py-6 pr-6 col-span-2 ml-10">
+                                    <h1 class="text-black text-lg font-semibold">Very Nice</h1>
+                                    <span>by Lucy Parker</span>
+                                    <div class="flex py-2">
+                                        <div class="hover:text-yellow-500">
+                                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                            <span class="fa fa-star checked "></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="ml-4">1.987 voters</p>
+                                    </div>
+                                    <div class="pb-4">
+                                        <p class="leading-5">Readers of all ages and walks of life have drawn inspiration and empowerment from Elizabeth Gilbert’s books for years.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute top-2 right-6">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400 hover:text-gray-700">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                    </svg>    
+                                </a>                                  
+                            </div>
+                        </div>
+                        <div class="bg-white w-[550px] border-t-2 rounded-b-lg">
+                            <div class="flex px-4 py-2">
+                                <img src="/img/seb.jpg" class="w-7 h-7 rounded-full">
+                                <img src="/img/doe.jpg" class="w-7 h-7 rounded-full">
+                                <img src="/img/summer.jpg" class="w-7 h-7 rounded-full">
+                                <div class="ml-4">
+                                    <p class="text-sm text-gray-400"><span class="font-semibold">Samantha William</span> and 2 <span class="font-semibold">other friends</span> like this</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-24">
+                        <div class="relative">
+                            <div class="bg-white grid grid-cols-3 text-gray-400 w-[550px] rounded-t-lg">
+                                <div class="col-span-1">
+                                    <img src="/img/stay.jpg" class="w-44 absolute bottom-4 left-6 hover:w-[185px] transformation ease-out duration-300 drop-shadow-xl">
+                                </div>
+                                <div class="py-6 pr-6 col-span-2 ml-10">
+                                    <h1 class="text-black text-lg font-semibold">Stay And Fight</h1>
+                                    <span>by  Lucy Parker</span>
+                                    <div class="flex py-2">
+                                        <div class="hover:text-yellow-500">
+                                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                            <span class="fa fa-star checked "></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p class="ml-4">1.987 voters</p>
+                                    </div>
+                                    <div class="pb-4">
+                                        <p class="leading-5">Readers of all ages and walks of life have drawn inspiration and empowerment from Elizabeth Gilbert’s books for years.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute top-2 right-6">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400 hover:text-gray-700">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                    </svg>    
+                                </a>                                  
+                            </div>
+                        </div>
+                        <div class="bg-white w-[550px] border-t-2 rounded-b-lg">
+                            <div class="flex px-4 py-2">
+                                <img src="/img/seb.jpg" class="w-7 h-7 rounded-full">
+                                <img src="/img/doe.jpg" class="w-7 h-7 rounded-full">
+                                <div class="ml-4">
+                                    <p class="text-sm text-gray-400"><span class="font-semibold">Samantha William</span> and <span class="font-semibold">Jonathan</span> like this</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
